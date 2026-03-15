@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dhanabells!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bdayMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card" id="mainCard">
+        <div id="setup-content">
+            <h1 id="intro-title"></h1>
+            <span id="status-text"></span>
+        </div>
+
+        <div id="birthday-content">
+            <img src="final.jpg" id="final-photo">
+            <h1 id="final-hbd" style="font-size: 3rem; margin-top: 15px;"></h1>
+            <span id="final-name"></span>
+            <div id="birthday-message"></div>
+            <button class="btn retry-mode" id="retryBtn" onclick="restartGame()">See Again ^⁠_⁠^</button>
+        </div>
+    </div>
+
+    <button class="btn" id="targetBtn" onclick="handleTap()">Tap Me ^⁠_⁠^</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
